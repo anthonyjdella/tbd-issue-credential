@@ -7,8 +7,8 @@
 ## Solution:
 
 This repo contains two submodules
-1. The frontend in `acme-frontend`
-2. The service in `ssi-service`
+1. The frontend in `/acme-frontend`
+2. The backend service in `/ssi-service`
 
 ### Screenshot:
 
