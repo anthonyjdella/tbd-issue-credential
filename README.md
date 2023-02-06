@@ -8,7 +8,7 @@
 
 ## How to use it?:
 
-1. Go to `https://acme-frontend.vercel.app/`
+1. Go to [https://acme-frontend.vercel.app/](https://github.com/vercel/virtual-event-starter-kit)
 2. Create Issuer DID
     - Enter the keytype: `Ed25519`
 3. Create Subject DID
