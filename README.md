@@ -66,6 +66,8 @@ This repo contains two submodules
 - `cd` into `/service-backend`
 - Run `python3 app.py`
 
+> Note: `/service-backend` is running on localhost, so it will only work if you run it locally.
+
 #### If SSI Service is Up:
 
 - `cd ssi-service/build`
