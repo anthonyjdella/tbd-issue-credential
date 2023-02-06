@@ -8,31 +8,40 @@
 
 ## How to use it?:
 
-1. Create Issuer DID
+1. Go to `https://acme-frontend.vercel.app/`
+2. Create Issuer DID
     - Enter the keytype: `Ed25519`
-2. Create Subject DID
+3. Create Subject DID
     - Enter the keytype: `Ed25519`
-3. Create Schema
+4. Create Schema
     - Enter the Issuer DID: `did:key:z6MkpEQY4FCCtJEVpZ6gGK541fYWynH2ya7D1RikTGfdydCF`
-4. Verify Credential
+5. Verify Credential
     - Enter the Issuer DID: `did:key:z6MkpEQY4FCCtJEVpZ6gGK541fYWynH2ya7D1RikTGfdydCF`
 
 ---
 
 ## Screenshot:
 
-![Web Page Screenshot]()
+![Web Page Screenshot](/assets/screenshot.png)
 
 ---
 
 ## Technical Solution:
 
+### Tech used:
+1. Vercel and Next.js for the frontend (my first time using them)
+    - Also includes Typescript
+2. Python for the backend
+    - Flask as the web server
+
+### Submodules:
 This repo contains two submodules
 1. The frontend in `/acme-frontend`
 2. The backend service in `/ssi-service`
 
 > Note: Because SSI Service was down, I created a test backend in `/service-backend`.
 
+### Local Backend:
 `/service-backend` is a Python backend with 3 endpoints:
 1. `/v1/dids/key` to create a key - [Postman screenshot](/service-backend/assets/create-key.png)
 2. `/v1/schemas` to create a schema - [Postman screenshot](/service-backend/assets/create-schema.png)
@@ -44,12 +53,20 @@ This repo contains two submodules
 
 ## Run:
 
-### If SSI Service is Down:
+### Frontend:
+
+- `cd` into `/acme-frontend`
+- `yarn install`
+- `yarn dev`
+
+### Backend:
+
+#### If SSI Service is Down:
 
 - `cd` into `/service-backend`
 - Run `python3 app.py`
 
-### If SSI Service is Up:
+#### If SSI Service is Up:
 
 - `cd ssi-service/build`
 - Run `docker-compose up`
