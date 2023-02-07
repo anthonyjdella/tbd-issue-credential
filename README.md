@@ -14,7 +14,7 @@
 2. Run a proxy (wondering why? [see explaination details](#if-ssi-service-is-up))
     - `lcp --proxyUrl https://ngrok.anthonydellavecchia.com`
     - Or `lcp --proxyUrl https://{YOUR-NGROK-URL}`
-3. Go to [https://acme-frontend.vercel.app/](https://acme-frontend.vercel.app/)
+3. Go to [https://tbd-verify-credential.vercel.app/](https://tbd-verify-credential.vercel.app/)
 4. Create Issuer DID
     - Enter the keytype: `Ed25519`
     - Copy the Issuer DID
