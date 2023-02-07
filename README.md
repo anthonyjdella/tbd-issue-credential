@@ -98,6 +98,7 @@ This repo contains two submodules
 #### If SSI Service is Up:
 - `cd ssi-service/build`
 - Run `docker-compose up`
+- Continue to follow the steps below (using ngrok and proxy)
 
 #### Proxy and Ngrok:
 There is a CORS issue, so this is how to fix it:
