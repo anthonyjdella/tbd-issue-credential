@@ -54,7 +54,7 @@ Validate Credential
 1. Vercel and Next.js for the frontend (my first time using them)
     - Also includes Typescript
 2. SSI Service in Golang for the backend
-3. Python for the test backend (wondering why? [see explaination details](#mock-backend))
+3. Python for the mock backend (wondering why? [see explaination details](#mock-backend))
     - Flask as the web server
 
 ### Challenges:
@@ -66,7 +66,7 @@ This repo contains two submodules
 1. The frontend in `/acme-frontend`
 2. The backend service in `/ssi-service`
 
-> Note: Because SSI Service was down, I created a test backend in `/mock-service-backend`.
+> Note: Because SSI Service was down, I created a mock backend in `/mock-service-backend`.
 
 ### Mock Backend:
 `/mock-service-backend` is a Mocked Python backend with 3 endpoints:
