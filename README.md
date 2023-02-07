@@ -59,7 +59,9 @@ Validate Credential
 
 ### Challenges:
 1. During initial development, the SSI Service was down, so I created my own mock service in Python `/mock-service-backend`
-2. I am running 2 servers: the SSI Service, and my development server. They are both on `localhost`, but different ports (8080 and 3000). But the SSI Service throws a CORS error, because no 'Access-Control-Allow-Origin' header is present. In order to fix it, I had to run the SSI service through a proxy.
+2. I am running 2 servers: the SSI Service, and my development server. They are both on `localhost`, but different ports (8080 and 3000). But the SSI Service throws a CORS error, because no 'Access-Control-Allow-Origin' header is present. In order to fix it, I had to run the SSI service through a proxy. This is done by:
+    - Creating a tunnel using ngrok. It forwards `localhost:8080` to a public URL like `ngrok.anthonydellavecchia.com/`
+    - Creating a proxy from `ngrok.anthonydellavecchia.com/` to `localhost:8010/proxy`. This way, I can access the SSI endpoints like so: `localhost:8010/proxy/v1/dids/key`
 
 ### Submodules:
 This repo contains two submodules
